@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Okul Robotik Dergisi</title>
+    <link rel="stylesheet" href="dflip/css/dflip.min.css">
+    <link rel="stylesheet" href="dflip/css/themify-icons.min.css">
+</head>
+<body>
+
+    <div id="flipbookContainer"></div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="dflip/js/dflip.min.js"></script>
+
+    <script>
+        var pdfUrl = "dergi.pdf"; // PDF dosyanızın adı
+        var options = {
+            height: 800,
+            duration: 800,
+            backgroundColor: "#2c3e50"
+        };
+        var flipBook = $("#flipbookContainer").flipBook(pdfUrl, options);
+    </script>
+</body>
+</html>
